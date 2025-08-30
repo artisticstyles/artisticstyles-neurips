@@ -1,0 +1,17 @@
+audiocraft>=0.3.0
+torch
+torchaudio
+transformers
+matplotlib
+pandas
+scipy
+scikit-learn
+tqdm
+seaborn
+tensorflow
+tensorflow-hub
+soundfile
+librosa
+protobuf
+torchmetrics
+numpy==1.26.4

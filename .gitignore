@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+gen/
+reference/*.wav
+results/
+figs/
+cross-artist-outputs/
+main-paper-figure/
+*.mp3
+*.wav
+*.png
+*.pdf
+*.pt
+*.csv

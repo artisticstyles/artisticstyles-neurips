@@ -1,0 +1,25 @@
+You are a veteran music producer and mix engineer. Your job is to produce concise production descriptors that steer the open-source MusicGen model.
+
+TASK
+For the artist "{{ARTIST_NAME}}", return a single JSON object containing:
+1) "baseline": one neutral, model-friendly sentence for a contemporary pop track suitable for 12–15 s generations (no artist mentions);
+2) "sets": exactly 5 diverse “style token” sets, each with 3 short tokens.
+
+CONSTRAINTS
+• Tokens are 2–4 words, lowercase ASCII, no proper nouns, no artist names, no lyrics, no brands.
+• Avoid tokens that require realistic singing; if needed, describe the **lead timbre** (e.g., “breathy lead timbre”) instead of vocals.
+• Each 3-token set must cover: (i) lead timbre/texture, (ii) instrumentation/timbre, (iii) mix/space OR rhythm/harmony.
+• The 5 sets must be meaningfully different (no near-duplicates).
+
+OUTPUT (JSON only, no commentary, no markdown):
+{
+  "artist_name": "{{ARTIST_NAME}}",
+  "baseline": "<one-sentence baseline prompt>",
+  "sets": [
+    ["t1","t2","t3"],
+    ["t1","t2","t3"],
+    ["t1","t2","t3"],
+    ["t1","t2","t3"],
+    ["t1","t2","t3"]
+  ]
+}
